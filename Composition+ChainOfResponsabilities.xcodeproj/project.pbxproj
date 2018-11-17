@@ -13,6 +13,10 @@
 		6C2032EC219F6C51009CB471 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C2032EB219F6C51009CB471 /* Assets.xcassets */; };
 		6C2032EF219F6C51009CB471 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C2032ED219F6C51009CB471 /* LaunchScreen.storyboard */; };
 		6C2032FA219F6C51009CB471 /* Composition_ChainOfResponsabilitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2032F9219F6C51009CB471 /* Composition_ChainOfResponsabilitiesTests.swift */; };
+		6C20330621A066D7009CB471 /* LocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C20330521A066D7009CB471 /* LocalDataSource.swift */; };
+		6C20330821A066E5009CB471 /* RemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C20330721A066E5009CB471 /* RemoteDataSource.swift */; };
+		6C20330A21A06702009CB471 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C20330921A06702009CB471 /* DataLoader.swift */; };
+		6C20330C21A06727009CB471 /* AnyDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C20330B21A06727009CB471 /* AnyDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		6C2032F5219F6C51009CB471 /* Composition+ChainOfResponsabilitiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Composition+ChainOfResponsabilitiesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C2032F9219F6C51009CB471 /* Composition_ChainOfResponsabilitiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Composition_ChainOfResponsabilitiesTests.swift; sourceTree = "<group>"; };
 		6C2032FB219F6C51009CB471 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C20330521A066D7009CB471 /* LocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataSource.swift; sourceTree = "<group>"; };
+		6C20330721A066E5009CB471 /* RemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSource.swift; sourceTree = "<group>"; };
+		6C20330921A06702009CB471 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
+		6C20330B21A06727009CB471 /* AnyDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,7 @@
 		6C2032E3219F6C4F009CB471 /* Composition+ChainOfResponsabilities */ = {
 			isa = PBXGroup;
 			children = (
+				6C20330421A06541009CB471 /* data */,
 				6C2032E4219F6C4F009CB471 /* AppDelegate.swift */,
 				6C2032E6219F6C4F009CB471 /* FeedViewController.swift */,
 				6C2032E8219F6C4F009CB471 /* Main.storyboard */,
@@ -94,6 +103,17 @@
 				6C2032FB219F6C51009CB471 /* Info.plist */,
 			);
 			path = "Composition+ChainOfResponsabilitiesTests";
+			sourceTree = "<group>";
+		};
+		6C20330421A06541009CB471 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				6C20330521A066D7009CB471 /* LocalDataSource.swift */,
+				6C20330721A066E5009CB471 /* RemoteDataSource.swift */,
+				6C20330921A06702009CB471 /* DataLoader.swift */,
+				6C20330B21A06727009CB471 /* AnyDataSource.swift */,
+			);
+			path = data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +217,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C20330A21A06702009CB471 /* DataLoader.swift in Sources */,
+				6C20330C21A06727009CB471 /* AnyDataSource.swift in Sources */,
+				6C20330821A066E5009CB471 /* RemoteDataSource.swift in Sources */,
+				6C20330621A066D7009CB471 /* LocalDataSource.swift in Sources */,
 				6C2032E7219F6C4F009CB471 /* FeedViewController.swift in Sources */,
 				6C2032E5219F6C4F009CB471 /* AppDelegate.swift in Sources */,
 			);
